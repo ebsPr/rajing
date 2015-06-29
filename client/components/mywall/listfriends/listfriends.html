@@ -1,0 +1,13 @@
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Your Friends</h3>
+  </div>
+  <div class="panel-body">
+    <div ng-repeat="friend in friends">
+		<a ui-sref="mywall.detail({friendId:friend.id})">{{friend.nick}}</a>
+	</div>
+  </div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<span ng-controller="toplistController as toplistCtrl">
+	
+
+	<div class="jumbotron">
+	  <h2>
+		Welcome to the toplist confession
+	  </h2>
+	  <p>You can vote the confession that you like it.</p>
+	  
+	</div>
+	
+	<div class="row">
+		
+	</div>
+
+	<div ng-repeat="friend in confessions | orderBy:'-points'">
+		<confession friend="friend"></confession>
+	</div>
+	
+
+</span>

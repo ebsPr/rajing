@@ -1,0 +1,21 @@
+{
+  "name": "clientrajing",
+  "version": "1.0.0",
+  "description": "front-end webapp client rajing",
+  "main": "app.js",
+  "dependencies": {
+    "main-bower-files": "^2.8.0",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less":"*",
+    "main-bower-files": "^2.8.0"
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saida balsells martinez",
+  "license": "ISC"
+}

@@ -1,0 +1,46 @@
+<html>
+	<head> 
+		<link href="public/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="bower_components/angucomplete-alt/angucomplete-alt.css" rel="stylesheet">
+	</head>
+	<body ng-app="appRaje">
+		
+		<div class="container" ng-controller="appController as appCtrl">
+			<div ng-include="'components/templates/head/head.html'"></div>
+			<div ng-include="'components/templates/navigation/navigation.html'"></div>
+			<div ui-view ></div>
+		</div>
+
+		<!-- angular-->
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<!-- bootstrap-->
+		<script type="text/javascript" src="public/lib/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="public/lib/bootstrap/dist/js/bootstrap.js"></script>
+		<!-- ui router -->
+		<script type="text/javascript" src="bower_components/ui-router/release/angular-ui-router.js"></script>
+		<!-- angucomplete-alt -->
+		<script type="text/javascript" src="bower_components/angucomplete-alt/angucomplete-alt.js"></script>
+		
+
+		<!-- angular app rajing -->
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="app.controller.js"></script>
+		
+		<!-- navigation module -->
+		<script type="text/javascript" src="components/templates/navigation/navigation.route.js"></script>
+		<script type="text/javascript" src="components/templates/navigation/navigation.controller.js"></script>
+
+		<!--pages -->
+			<!-- top list page -->
+			<script type="text/javascript" src="components/toplist/toplist.controller.js"></script>		
+			<!-- mywall page -->
+			<script type="text/javascript" src="components/mywall/detail/detail.controller.js"></script>		
+			<script type="text/javascript" src="components/mywall/mywall.route.js"></script>		
+			<script type="text/javascript" src="components/mywall/mywall.controller.js"></script>		
+			
+
+		<!-- directives -->
+			<!-- directive confession -->
+			<script type="text/javascript" src="angular_components/confessiontag/confession.directive.js"></script>
+	</body>
+</html>

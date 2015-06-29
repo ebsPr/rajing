@@ -1,0 +1,32 @@
+
+
+<div class="panel panel-primary">
+ 	<div class="panel-heading">
+  		<div >
+  			<div class="row">
+  				<div class="col-lg-1">
+  					<span class="btn btn-success btn-xs" ng-show="showAdd">
+  						<span class=" glyphicon glyphicon-plus" ng-click="addPoint(friend)" ></span>
+  					</span>
+  				</div>
+  				<div class="col-lg-11">
+  					<h3 class="panel-title" >{{friend.confession}}</h3>
+  				</div>
+  			</div>
+		</div> 
+  </div>
+  <div class="panel-body">
+  	<div class="row">
+  		<div class="col-lg-2">
+		    <ul class="nav nav-pills">
+			  	<li class="active">
+			  		<h2><span class="label label-danger" >{{friend.points}}</span></h2>
+				</li>
+			</ul>
+		</div>
+		<div class="col-lg-10">
+			{{friend.confession}} - description
+		</div>
+	</div>
+  </div>
+</div>

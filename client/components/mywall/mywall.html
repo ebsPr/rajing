@@ -1,0 +1,12 @@
+<div ng-controller="mywallController as mywallCtrl">
+	<div ng-include="'../../components/mywall/head/headwall.html'"></div>
+
+	<div class="row">
+		<div class="col-lg-4">
+			<div ng-include="'../../components/mywall/listfriends/listfriends.html'"></div>
+		</div>
+		<div class="col-lg-8">
+			<div ui-view></div>
+		</div>
+	</div>
+</div>
